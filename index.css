@@ -1,0 +1,54 @@
+/* CSS moved to index.html for CDN compatibility */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Presentation Mode Styles */
+.presentation-highlight {
+    position: relative;
+    z-index: 50;
+    box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.5), 0 0 100px rgba(250, 204, 21, 0.2);
+    transition: all 1s ease-in-out;
+    border-radius: 1rem;
+    transform: scale(1.02);
+}
+
+.presentation-highlight::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(250, 204, 21, 0.05) 100%);
+    z-index: -1;
+    pointer-events: none;
+    animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
