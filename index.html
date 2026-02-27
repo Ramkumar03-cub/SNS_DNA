@@ -2,30 +2,72 @@
 <html lang="en">
 
 <head>
+  <!-- Basic Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DNA | Design Thinking Education | SNS Institutions | Coimbatore</title>
+
+  <!-- SEO Title -->
+  <title>DNA Design Thinking Lab | Innovation & Entrepreneurship at SNS Institutions, Coimbatore</title>
+
+  <!-- SEO Description -->
   <meta name="description"
-    content="Welcome to SNS Institutions, Coimbatore — the DNA of innovation-driven education, offering world-class programs, industry-integrated learning, cutting-edge research, and transformative experiences that shape future-ready global leaders." />
+    content="DNA at SNS Institutions, Coimbatore is a Design Thinking & Innovation Lab empowering students through creativity, entrepreneurship, industry projects, and future-ready skills." />
 
-  <!-- Open Graph / Link Preview Tags -->
-  <meta property="og:title" content="DNA | Design Thinking Education | SNS Institutions | Coimbatore" />
+  <!-- SEO Keywords -->
+  <meta name="keywords"
+    content="DNA SNS, Design Thinking Lab, SNS Institutions Innovation, Design Thinking Coimbatore, Entrepreneurship Lab, Student Innovation Hub" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://dna.snsgroups.com/" />
+
+  <!-- Open Graph (Social SEO) -->
+  <meta property="og:title" content="DNA Design Thinking Lab | SNS Institutions" />
   <meta property="og:description"
-    content="Welcome to SNS Institutions, Coimbatore — the DNA of innovation-driven education, offering world-class programs, industry-integrated learning, cutting-edge research, and transformative experiences that shape future-ready global leaders." />
-  <meta property="og:image" content="https://dna.snsgroups.com/og-banner.png" />
-  <meta property="og:url" content="https://dna.snsgroups.com/" />
+    content="Explore innovation, design thinking, and entrepreneurship at DNA – SNS Institutions’ flagship innovation lab in Coimbatore." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dna.snsgroups.com/" />
+  <meta property="og:image" content="https://dna.snsgroups.com/DNA_logo.png" />
 
-  <!-- Twitter Card Tags -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DNA | Design Thinking Education | SNS Institutions | Coimbatore" />
+  <meta name="twitter:title" content="DNA Design Thinking Lab | SNS Institutions" />
   <meta name="twitter:description"
-    content="Welcome to SNS Institutions, Coimbatore — the DNA of innovation-driven education, offering world-class programs, industry-integrated learning, cutting-edge research, and transformative experiences that shape future-ready global leaders." />
-  <meta name="twitter:image" content="https://dna.snsgroups.com/og-banner.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    content="Innovation. Design Thinking. Entrepreneurship. Discover DNA at SNS Institutions, Coimbatore." />
+  <meta name="twitter:image" content="https://dna.snsgroups.com/DNA_logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/DNA_logo.png" />
+
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FACC15',
+            secondary: '#0F172A',
+            surface: '#1E293B',
+            text: '#F8FAFC',
+            muted: '#94A3B8',
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            heading: ['Space Grotesk', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
   <style>
     body {
       font-family: 'Outfit', sans-serif;
@@ -43,39 +85,13 @@
     .scroll-mt-24 {
       scroll-margin-top: 6rem;
     }
-  </style>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#FACC15', // Yellow-400
-            secondary: '#0F172A', // Slate-900
-            surface: '#1E293B', // Slate-800
-            text: '#F8FAFC', // Slate-50
-            muted: '#94A3B8', // Slate-400
-          },
-          fontFamily: {
-            sans: ['Outfit', 'sans-serif'],
-            heading: ['Space Grotesk', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .stroke-text {
-        -webkit-text-stroke: 1px theme('colors.primary');
-        color: transparent;
-      }
-    }
 
     @keyframes fade-in-up {
       from {
         opacity: 0;
         transform: translateY(20px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -86,23 +102,53 @@
       animation: fade-in-up 0.8s ease-out forwards;
     }
   </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+
+  <!-- Structured Data (Google SEO BOOST) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "DNA Design Thinking Lab",
+    "url": "https://dna.snsgroups.com/",
+    "logo": "https://dna.snsgroups.com/DNA_logo.png",
+    "description": "DNA is the Design Thinking and Innovation Lab of SNS Institutions, fostering creativity, entrepreneurship, and real-world problem solving.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Coimbatore",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "India"
+    },
+    "parentOrganization": {
+      "@type": "EducationalOrganization",
+      "name": "SNS Institutions"
+    }
   }
-}
-</script>
-  <link rel="icon" type="image/png" href="/DNA_logo.png" />
+  </script>
+
+  <!-- React Import Map -->
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@^19.2.4",
+      "react/": "https://esm.sh/react@^19.2.4/",
+      "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+      "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+    }
+  }
+  </script>
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="/index.css">
 </head>
 
 <body class="bg-secondary text-text antialiased">
+
+  <!-- React Root -->
   <div id="root"></div>
+
+  <!-- Main React Entry -->
   <script type="module" src="/index.tsx"></script>
+
 </body>
 
 </html>
