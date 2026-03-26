@@ -114,14 +114,13 @@ export const InnovationHubLabs: React.FC = () => {
     }, []);
 
     const labs = [
-        { name: 'SNS Computer Lab', icon: '💧', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/lab.JPG' },
+        { name: 'Computer Lab', icon: '💧', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/lab.JPG' },
         { name: 'Innovation Lab', icon: '💡', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/innovation-hub.jpg' },
-        { name: 'Bio Medicine Lab', icon: '🌐', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/IOT lab .JPG' },
+        { name: 'Bio Medicine Lab', icon: '🌐', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/IOT lab.jpg' },
         { name: 'Piston Factory', icon: '⚙️', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/pistol lab .JPG' },
         { name: 'Robotic Lab', icon: '🤖', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/robotic lab.JPG' },
         { name: 'E Vehicle Lab', icon: '⚡', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/e vehicel lab.JPG' },
-        { name: 'Drone Technology', icon: '🚁', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/drone lab.JPG' },
-        { name: 'Chemistry Lab', icon: '🚁', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/Chemistry lab.jpg' },
+        { name: 'Pharmacy Lab', icon: '🚁', gradient: 'from-[#FFCC00] via-[#FFCC00] to-[#FFCC00]', image: '/lab/pharmacy_lab.JPG' },
     ];
 
     return (
@@ -167,11 +166,11 @@ export const InnovationHubLabs: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div className="flex flex-wrap justify-center gap-10">
                         {labs.map((lab, index) => (
                             <div
                                 key={index}
-                                className="lab-frame group/frame"
+                                className="lab-frame group/frame w-full md:w-[calc(50%-1.25rem)] lg:w-[calc(25%-1.875rem)]"
                             >
                                 <div className="relative">
                                     <div className={`absolute -inset-2 bg-gradient-to-r ${lab.gradient} rounded-3xl blur-xl opacity-0 group-hover/frame:opacity-20 transition-opacity duration-700`}></div>

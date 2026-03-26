@@ -51,12 +51,12 @@ export const DTEnabledFacilities: React.FC = () => {
 
     const facilities = [
         { name: 'Smart Classrooms', icon: '🏫', image: '/dt enabled facitlites/smart classrooms.jpg' },
-        { name: 'Cohort Space', icon: '�', image: '/dt enabled facitlites/cohort space.jpg' },
+        { name: 'Cohort Space', icon: '', image: '/dt enabled facitlites/cohort space.jpg' },
         { name: 'Collaboration Zone', icon: '🤝', image: '/dt enabled facitlites/collabration zone.JPG' },
         { name: 'Digital Library', icon: '📚', image: '/dt enabled facitlites/digital lib.JPG' },
         { name: 'Maker Space', icon: '🛠️', image: '/dt enabled facitlites/maker_space.jpg' },
-        { name: 'Music Studio', icon: '�', image: '/dt enabled facitlites/music_studio.jpg' },
-        { name: 'Dance Studio', icon: '�', image: '/dt enabled facitlites/dance_studio.jpg' },
+        { name: 'Music Studio', icon: '', image: '/dt enabled facitlites/music_studio.jpg' },
+        { name: 'Dance Studio', icon: '', image: '/dt enabled facitlites/dance_studio.jpg' },
         { name: 'Digital Theatre', icon: '🎭', image: '/dt enabled facitlites/digital_theatre.jpg' },
     ];
 
